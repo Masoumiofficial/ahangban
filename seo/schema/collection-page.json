@@ -1,0 +1,61 @@
+{
+  "@comment": "الگوی JSON-LD برای صفحات آرشیو دسته و هاب هنرمندان آهنگ بان. همه مقادیر داخل {{ }} جای‌نگهدارند و باید با داده واقعی همان صفحه جایگزین شوند. از افزودن review، aggregateRating، تعداد آثار یا هر داده‌ای که روی صفحه دیده نمی‌شود خودداری کنید.",
+  "usage": "برای /music/ ،/music-video/ ،/album/ ،/remix/ ،/madahi/ ،/selected-works/ و /artists/ با داده همان صفحه استفاده شود. ItemList فقط آیتم‌های واقعاً نمایش‌داده‌شده در همان صفحه آرشیو را فهرست کند.",
+  "template": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "{{CANONICAL_URL}}#webpage",
+        "url": "{{CANONICAL_URL}}",
+        "name": "{{H1}}",
+        "description": "{{META_DESCRIPTION}}",
+        "inLanguage": "fa-IR",
+        "isPartOf": { "@id": "https://ahangban.ir/#website" },
+        "mainEntity": { "@id": "{{CANONICAL_URL}}#itemlist" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "{{CANONICAL_URL}}#itemlist",
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "{{REAL_ITEM_URL_1}}",
+            "name": "{{REAL_ITEM_TITLE_1}}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "{{REAL_ITEM_URL_2}}",
+            "name": "{{REAL_ITEM_TITLE_2}}"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "آهنگ بان",
+            "item": "https://ahangban.ir/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{CATEGORY_DISPLAY_NAME}}",
+            "item": "{{CANONICAL_URL}}"
+          }
+        ]
+      }
+    ]
+  },
+  "rules": [
+    "FAQPage فقط وقتی افزوده شود که بخش پرسش و پاسخ عیناً روی همان صفحه نمایش داده شود.",
+    "MusicAlbum فقط روی صفحه تکی آلبوم و با فهرست واقعی قطعه‌ها؛ VideoObject فقط روی صفحه تکی ویدیو و با داده واقعی همان ویدیو.",
+    "برای /artists/ می‌توان در ItemList به‌جای url ساده، آیتم‌های Person یا MusicGroup با فقط نام و URL واقعی هر هنرمند گذاشت؛ داده بیوگرافیک ساختگی اضافه نشود.",
+    "هیچ aggregateRating، review، offers یا ادعای قیمت/رایگان‌بودن در این الگو مجاز نیست."
+  ]
+}
