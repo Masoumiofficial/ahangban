@@ -21,7 +21,7 @@ start "Ahangban localhost server" python -m http.server %PORT% --bind 127.0.0.1
 
 :open_preview
 timeout /t 2 /nobreak >nul
-start "" "http://localhost:%PORT%/index.html"
+start "" "http://localhost:%PORT%/hub.html"
 echo The server is running in its separate console window. Keep that window open.
 echo Press Ctrl+C in the server window (or close it) to stop the preview.
 exit /b 0
