@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "brand-identity.schema.json",
+  "title": "Ahangban Brand Identity",
+  "type": "object",
+  "required": ["schema_version", "source_of_truth", "brand_name_fa", "brand_name_latin", "short_description", "web", "capabilities", "rights_and_ownership"],
+  "properties": {
+    "schema_version": {"type": "string"}, "source_of_truth": {"type": "string"}, "brand_name_fa": {"type": "string"}, "brand_name_latin": {"type": "string"}, "approved_spellings": {"type": "object"}, "avoid_spellings": {"type": "array", "items": {"type": "string"}}, "short_description": {"type": "string"}, "full_description": {"type": "string"}, "about": {"type": "string"}, "mission": {"type": "array", "items": {"type": "string"}}, "vision": {"type": "string"}, "values": {"type": "array", "items": {"type": "string"}}, "positioning": {"type": "string"}, "audiences": {"type": "array"}, "value_proposition": {"type": "string"}, "voice": {"type": "object"}, "tagline": {"type": "object"}, "key_messages": {"type": "array", "items": {"type": "string"}}, "web": {"type": "object"}, "public_contact": {"type": ["object", "null"]}, "organization_history": {"type": "object"}, "capabilities": {"type": "object"}, "rights_and_ownership": {"type": "object"}, "last_reviewed_on": {"type": ["string", "null"]}
+  }
+}

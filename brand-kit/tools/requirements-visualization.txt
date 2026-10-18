@@ -1,0 +1,2 @@
+# Optional dependency for regenerating the formatted xlsx report; not required to use other Brand Kit files.
+openpyxl>=3.1,<4

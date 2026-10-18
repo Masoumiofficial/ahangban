@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "visual-assets.schema.json",
+  "title": "Ahangban Visual Asset Inventory",
+  "type": "object",
+  "required": ["schema_version", "source_of_truth", "records"],
+  "properties": {
+    "schema_version": {"type": "string"}, "registry_id": {"type": "string"}, "generated_on": {"type": "string"}, "source_of_truth": {"type": "string"}, "records": {"type": "array", "items": {"type": "object", "required": ["path", "file_name", "category", "format", "purpose", "approval_status", "license_status"], "properties": {"path": {"type": "string"}, "file_name": {"type": "string"}, "category": {"enum": ["asset", "concept", "reference"]}, "format": {"type": "string"}, "purpose": {"type": "string"}, "dimensions": {"type": ["array", "null"]}, "aspect_ratio": {"type": ["string", "null"]}, "bytes": {"type": "integer"}, "approval_status": {"enum": ["WORKING_DRAFT", "EXPLORATORY", "REFERENCE_ONLY", "APPROVED", "RETIRED"]}, "license_status": {"type": "string"}, "source": {"type": "string"}, "last_changed_on": {"type": ["string", "null"]}, "notes": {"type": "string"}}, "additionalProperties": false}}
+  }
+}

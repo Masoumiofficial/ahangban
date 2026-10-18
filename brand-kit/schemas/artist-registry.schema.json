@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "artist-registry.schema.json",
+  "title": "Ahangban Artist Registry",
+  "type": "object",
+  "required": ["schema_version", "registry_id", "source_of_truth", "records"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "registry_id": {"const": "ahangban-artist-registry"},
+    "generated_on": {"type": "string", "format": "date"},
+    "source_of_truth": {"type": "string"},
+    "scope": {"type": "string"},
+    "site_database_available": {"type": "boolean"},
+    "records": {"type": "array", "items": {"$ref": "#/$defs/artist"}}
+  },
+  "$defs": {
+    "status": {"enum": ["COMPLETE", "INCOMPLETE", "NEEDS_REVIEW", "VERIFIED", "UNKNOWN"]},
+    "source": {"type": "object", "required": ["url", "publisher", "source_type", "accessed_on", "supports"], "properties": {"url": {"type": "string", "format": "uri"}, "publisher": {"type": "string"}, "source_type": {"type": "string"}, "accessed_on": {"type": "string", "format": "date"}, "supports": {"type": "string"}}, "additionalProperties": false},
+    "artist": {
+      "type": "object",
+      "required": ["artist_id", "display_name_fa", "aliases", "slug", "entity_type", "completion", "rights_status", "source_refs", "last_reviewed_on"],
+      "properties": {
+        "artist_id": {"type": "string", "minLength": 1}, "display_name_fa": {"type": "string", "minLength": 1}, "official_or_latin_name": {"type": ["string", "null"]}, "aliases": {"type": "array", "items": {"type": "string"}}, "slug": {"type": ["string", "null"]}, "entity_type": {"enum": ["PERSON", "GROUP", "INSTRUMENTALIST", "OTHER", "UNKNOWN"]}, "short_bio": {"type": ["string", "null"]}, "full_bio": {"type": ["string", "null"]}, "profile_image": {"type": ["string", "null"]}, "featured_image": {"type": ["string", "null"]}, "genres_as_reported": {"type": "array", "items": {"type": "string"}}, "official_website": {"type": ["string", "null"]}, "verified_social_profiles": {"type": "array"}, "related_track_ids": {"type": "array", "items": {"type": "string"}}, "related_album_ids": {"type": "array", "items": {"type": "string"}}, "related_video_ids": {"type": "array", "items": {"type": "string"}}, "site_page_status": {"enum": ["PUBLISHED", "UNPUBLISHED", "UNKNOWN"]}, "identity_status": {"$ref": "#/$defs/status"}, "completion": {"type": "object", "required": ["name", "slug", "biography", "featured_image", "reliable_sources", "official_links", "track_album_relationships", "artist_page", "seo_title_description", "broken_links_and_duplicates", "final_quality_control"], "properties": {"name": {"$ref": "#/$defs/status"}, "slug": {"$ref": "#/$defs/status"}, "biography": {"$ref": "#/$defs/status"}, "featured_image": {"$ref": "#/$defs/status"}, "reliable_sources": {"$ref": "#/$defs/status"}, "official_links": {"$ref": "#/$defs/status"}, "track_album_relationships": {"$ref": "#/$defs/status"}, "artist_page": {"$ref": "#/$defs/status"}, "seo_title_description": {"$ref": "#/$defs/status"}, "broken_links_and_duplicates": {"$ref": "#/$defs/status"}, "final_quality_control": {"$ref": "#/$defs/status"}}, "additionalProperties": false}, "priority": {"type": ["string", "null"]}, "segment_as_reported": {"type": ["string", "null"]}, "seed_reason": {"type": ["string", "null"]}, "seed_next_action": {"type": ["string", "null"]}, "seed_source_snapshot": {"type": ["string", "null"]}, "rights_status": {"enum": ["UNVERIFIED", "IN_REVIEW", "CLEARED_FOR_DEFINED_USE", "REJECTED", "UNKNOWN"]}, "source_refs": {"type": "array", "items": {"$ref": "#/$defs/source"}}, "next_action": {"type": "string"}, "last_reviewed_on": {"type": ["string", "null"], "format": "date"}, "review_notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

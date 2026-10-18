@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "social-accounts.schema.json",
+  "title": "Ahangban Social Accounts",
+  "type": "object",
+  "required": ["schema_version", "source_of_truth", "records"],
+  "properties": {
+    "schema_version": {"type": "string"}, "source_of_truth": {"type": "string"}, "generated_on": {"type": "string"}, "policy": {"type": "string"},
+    "records": {"type": "array", "items": {"type": "object", "required": ["platform", "account_name", "handle", "profile_url", "status", "is_official", "last_verified_on"], "properties": {"platform": {"type": "string"}, "account_name": {"type": ["string", "null"]}, "handle": {"type": ["string", "null"]}, "profile_url": {"type": ["string", "null"]}, "status": {"enum": ["VERIFIED", "ACTIVE", "INACTIVE", "PLANNED", "UNKNOWN"]}, "is_official": {"type": "boolean"}, "evidence": {"type": "string"}, "avatar_asset": {"type": ["string", "null"]}, "working_canvas": {"type": "object"}, "bio": {"type": ["string", "null"]}, "platform_voice": {"type": "string"}, "content_assets": {"type": "array", "items": {"type": "string"}}, "hashtags": {"type": "array", "items": {"type": "string"}}, "website_reference": {"type": "string"}, "last_verified_on": {"type": ["string", "null"]}, "next_action": {"type": "string"}}, "additionalProperties": false}}
+  }
+}

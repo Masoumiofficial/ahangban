@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "music-catalog.schema.json",
+  "title": "Ahangban Music Catalog",
+  "type": "object",
+  "required": ["schema_version", "registry_id", "source_of_truth", "records"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "registry_id": {"const": "ahangban-music-catalog"},
+    "generated_on": {"type": "string", "format": "date"},
+    "source_of_truth": {"type": "string"},
+    "scope": {"type": "string"},
+    "site_database_available": {"type": "boolean"},
+    "records": {"type": "array", "items": {"$ref": "#/$defs/record"}}
+  },
+  "$defs": {
+    "status": {"enum": ["COMPLETE", "INCOMPLETE", "NEEDS_REVIEW", "VERIFIED", "UNKNOWN"]},
+    "source": {"type": "object", "required": ["url", "publisher", "source_type", "accessed_on", "supports"], "properties": {"url": {"type": "string"}, "publisher": {"type": "string"}, "source_type": {"type": "string"}, "accessed_on": {"type": "string"}, "supports": {"type": "string"}}, "additionalProperties": false},
+    "rights_use": {"type": "object", "properties": {"status": {"enum": ["UNKNOWN", "PENDING", "ALLOWED", "DENIED", "EXPIRED"]}, "territories": {"type": "array", "items": {"type": "string"}}, "starts_on": {"type": ["string", "null"]}, "ends_on": {"type": ["string", "null"]}, "evidence_ref": {"type": ["string", "null"]}}, "additionalProperties": false},
+    "record": {
+      "type": "object",
+      "required": ["record_id", "title_fa", "slug", "content_type", "artist_ids", "source_refs", "rights_status", "completion", "last_reviewed_on"],
+      "properties": {
+        "record_id": {"type": "string", "minLength": 1}, "title_fa": {"type": "string", "minLength": 1}, "title_latin": {"type": ["string", "null"]}, "alternate_titles": {"type": "array", "items": {"type": "string"}}, "slug": {"type": ["string", "null"]}, "content_type": {"enum": ["SINGLE", "ALBUM", "EP", "MUSIC_VIDEO", "REMIX", "PODCAST", "LIVE", "INSTRUMENTAL", "OTHER"]}, "artist_ids": {"type": "array", "items": {"type": "string"}}, "album_id": {"type": ["string", "null"]}, "related_record_ids": {"type": "array", "items": {"type": "string"}}, "release_date": {"type": ["string", "null"], "format": "date"}, "duration_seconds": {"type": ["integer", "null"], "minimum": 0}, "isrc": {"type": ["string", "null"]}, "upc_or_ean": {"type": ["string", "null"]}, "contributors": {"type": "array", "items": {"type": "object", "required": ["role", "name"], "properties": {"role": {"type": "string"}, "name": {"type": "string"}, "artist_id": {"type": ["string", "null"]}}, "additionalProperties": false}}, "label_or_publisher": {"type": ["string", "null"]}, "language": {"type": ["string", "null"]}, "genres": {"type": "array", "items": {"type": "string"}}, "explicit_content": {"type": ["boolean", "null"]}, "media": {"type": "object", "properties": {"cover_asset_uri": {"type": ["string", "null"]}, "audio_asset_uri": {"type": ["string", "null"]}, "audio_variants": {"type": "array", "items": {"type": "object", "properties": {"format": {"type": "string"}, "codec": {"type": ["string", "null"]}, "bitrate_kbps": {"type": ["integer", "null"]}, "sample_rate_hz": {"type": ["integer", "null"]}, "channels": {"type": ["integer", "null"]}, "asset_uri": {"type": ["string", "null"]}}, "additionalProperties": false}}}, "additionalProperties": false}, "external_release_urls": {"type": "array", "items": {"type": "string", "format": "uri"}}, "rights_status": {"enum": ["UNVERIFIED", "IN_REVIEW", "CLEARED_FOR_DEFINED_USE", "REJECTED", "UNKNOWN"]}, "rights": {"type": "object", "properties": {"master_rights_holder": {"type": ["string", "null"]}, "publishing_rights_holder": {"type": ["string", "null"]}, "document_reference": {"type": ["string", "null"]}, "uses": {"type": "object", "properties": {"metadata_display": {"$ref": "#/$defs/rights_use"}, "streaming": {"$ref": "#/$defs/rights_use"}, "download": {"$ref": "#/$defs/rights_use"}, "video": {"$ref": "#/$defs/rights_use"}, "remix": {"$ref": "#/$defs/rights_use"}, "promotion": {"$ref": "#/$defs/rights_use"}}, "additionalProperties": false}}, "additionalProperties": false}, "site_page_status": {"enum": ["PUBLISHED", "UNPUBLISHED", "UNKNOWN"]}, "seo_title": {"type": ["string", "null"]}, "meta_description": {"type": ["string", "null"]}, "source_refs": {"type": "array", "items": {"$ref": "#/$defs/source"}}, "completion": {"type": "object", "additionalProperties": {"$ref": "#/$defs/status"}}, "last_reviewed_on": {"type": ["string", "null"], "format": "date"}, "notes": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

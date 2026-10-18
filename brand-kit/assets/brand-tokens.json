@@ -23,7 +23,11 @@
     "line": "#E5E5E5",
     "decorativeGray": "#BDBDBD"
   },
-  "logoColors": ["#111111", "#FFFFFF", "#185ADB"],
+  "logoColors": [
+    "#111111",
+    "#FFFFFF",
+    "#185ADB"
+  ],
   "colorRoles": {
     "text": "#111111",
     "background": "#FFFFFF",
@@ -40,10 +44,38 @@
     "latin": "Ahangban Vazirmatn, Arial, sans-serif",
     "bodySize": "16px",
     "bodyLineHeight": 1.8,
-    "weights": [400, 500, 600, 700, 800, 900],
-    "license": "SIL Open Font License 1.1; see assets/fonts/OFL.txt"
+    "weights": [
+      400,
+      500,
+      600,
+      700,
+      800
+    ],
+    "license": "SIL Open Font License 1.1; see assets/fonts/OFL.txt",
+    "fontWeightsByScript": {
+      "arabic": [
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "latin": [
+        400,
+        700
+      ]
+    }
   },
-  "spacingPx": [4, 8, 12, 16, 24, 32, 48, 64],
+  "spacingPx": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
   "radiiPx": {
     "control": 8,
     "card": 16,

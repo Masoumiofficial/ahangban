@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "ahangban-music-catalog",
+  "generated_on": "2026-10-18",
+  "source_of_truth": "catalog.json",
+  "scope": "رکوردهای واقعی و منبع‌دار آهنگ‌بان؛ خالی ماندن به‌معنای نبود دادهٔ قابل‌تأیید در این مخزن است.",
+  "site_database_available": false,
+  "records": []
+}

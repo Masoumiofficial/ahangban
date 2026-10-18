@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "source_of_truth": "accounts.json",
+  "generated_on": "2026-10-18",
+  "records": [
+    {
+      "platform": "Instagram",
+      "account_name": null,
+      "handle": null,
+      "profile_url": null,
+      "status": "UNKNOWN",
+      "is_official": false,
+      "evidence": "در assets/ دارایی‌هایی با نام instagram-avatar.png و instagram-story-template.svg وجود دارد؛ این فقط وجود فایل طراحی را ثابت می‌کند، نه مالکیت یا حضور حساب.",
+      "avatar_asset": "assets/instagram-avatar.png",
+      "working_canvas": {"profile": "1080×1080 px؛ اندازهٔ فایل موجود، نه تضمین الزام/اندازهٔ فعلی پلتفرم", "story": "1080×1920 px؛ ابعاد بوم قالب موجود"},
+      "bio": null,
+      "platform_voice": "پیشنهاد ویرایشیِ غیرمصوب: کوتاه، تصویری و فارسی‌محور؛ هر ادعای قابلیت یا انتشار باید پیش از پست بررسی شود.",
+      "content_assets": ["assets/instagram-story-template.svg", "assets/social-post-template.svg", "assets/artist-release-template.svg"],
+      "hashtags": ["#آهنگ‌بان", "#کشف_آهنگ", "#موسیقی_فارسی"],
+      "website_reference": "فقط پس از تأیید URL و فعال‌بودن مقصد به ahangban.ir پیوند دهید.",
+      "last_verified_on": null,
+      "next_action": "مالک حساب، شناسه، URL و دسترسی را از مالک پروژه تأیید کنید؛ سپس الزامات و ابعاد روز پلتفرم را از راهنمای رسمی همان روز بررسی کنید."
+    },
+    {
+      "platform": "Telegram",
+      "account_name": null,
+      "handle": null,
+      "profile_url": null,
+      "status": "UNKNOWN",
+      "is_official": false,
+      "evidence": "در assets/ فایل telegram-avatar.png موجود است؛ این فقط دارایی طراحی را ثابت می‌کند، نه وجود/مالکیت/فعال‌بودن کانال یا حساب.",
+      "avatar_asset": "assets/telegram-avatar.png",
+      "working_canvas": {"profile": "512×512 px؛ اندازهٔ فایل موجود، نه ادعای الزام فنی جاری"},
+      "bio": null,
+      "platform_voice": "پیشنهاد ویرایشیِ غیرمصوب: اطلاع‌رسان، شفاف و بدون وعدهٔ قابلیت تأییدنشده.",
+      "content_assets": ["assets/social-post-template.svg", "assets/artist-release-template.svg"],
+      "hashtags": ["#آهنگ‌بان", "#موسیقی_فارسی"],
+      "website_reference": "فقط پس از تأیید URL و فعال‌بودن مقصد به ahangban.ir پیوند دهید.",
+      "last_verified_on": null,
+      "next_action": "مالک حساب، شناسه، URL و دسترسی را از مالک پروژه تأیید کنید؛ سپس الزامات و ابعاد روز پلتفرم را بررسی کنید."
+    }
+  ],
+  "policy": "هیچ handle، URL، bio یا حساب تأییدشده در این مخزن موجود نیست. حسابی را رسمی معرفی نکنید تا مالکیت آن مستقلاً تأیید و last_verified_on ثبت شود. ابعاد ذکرشده فقط ابعاد فایل/قالب موجودند و جایگزین مستندات روز پلتفرم نیستند."
+}

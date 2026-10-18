@@ -4,7 +4,7 @@
   <style><![CDATA[
     @font-face { font-family: "AhangbanVazirmatn"; src: url("fonts/vazirmatn-arabic-400.woff2") format("woff2"); font-weight: 400 600; font-style: normal; font-display: swap; }
     @font-face { font-family: "AhangbanVazirmatn"; src: url("fonts/vazirmatn-arabic-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
-    @font-face { font-family: "AhangbanVazirmatn"; src: url("fonts/vazirmatn-arabic-800.woff2") format("woff2"); font-weight: 800 900; font-style: normal; font-display: swap; }
+    @font-face { font-family: "AhangbanVazirmatn"; src: url("fonts/vazirmatn-arabic-800.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
   ]]></style>
   <rect width="1600" height="1600" fill="#111111"/>
   <circle cx="800" cy="675" r="390" fill="none" stroke="#185ADB" stroke-width="2" opacity=".65"/>

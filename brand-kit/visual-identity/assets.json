@@ -1,0 +1,893 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "ahangban-visual-assets",
+  "generated_on": "2026-10-18",
+  "source_of_truth": "assets.json",
+  "records": [
+    {
+      "path": "assets/ahangban-logo-horizontal-color.png",
+      "file_name": "ahangban-logo-horizontal-color.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        1200,
+        369
+      ],
+      "bytes": 21389,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "400:123"
+    },
+    {
+      "path": "assets/ahangban-logo-horizontal-color.svg",
+      "file_name": "ahangban-logo-horizontal-color.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        520,
+        160
+      ],
+      "bytes": 4454,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "13:4"
+    },
+    {
+      "path": "assets/ahangban-logo-horizontal-reverse.png",
+      "file_name": "ahangban-logo-horizontal-reverse.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        1200,
+        369
+      ],
+      "bytes": 18212,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "400:123"
+    },
+    {
+      "path": "assets/ahangban-logo-horizontal-reverse.svg",
+      "file_name": "ahangban-logo-horizontal-reverse.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        520,
+        160
+      ],
+      "bytes": 4456,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "13:4"
+    },
+    {
+      "path": "assets/ahangban-logo-horizontal.png",
+      "file_name": "ahangban-logo-horizontal.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        1200,
+        369
+      ],
+      "bytes": 21204,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "400:123"
+    },
+    {
+      "path": "assets/ahangban-logo-horizontal.svg",
+      "file_name": "ahangban-logo-horizontal.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        520,
+        160
+      ],
+      "bytes": 4448,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "13:4"
+    },
+    {
+      "path": "assets/ahangban-logo-stacked-color.png",
+      "file_name": "ahangban-logo-stacked-color.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "bytes": 24917,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-logo-stacked-color.svg",
+      "file_name": "ahangban-logo-stacked-color.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        360,
+        360
+      ],
+      "bytes": 4456,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-logo-stacked.png",
+      "file_name": "ahangban-logo-stacked.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "bytes": 24070,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-logo-stacked.svg",
+      "file_name": "ahangban-logo-stacked.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        360,
+        360
+      ],
+      "bytes": 4450,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-mark-color.png",
+      "file_name": "ahangban-mark-color.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        600,
+        600
+      ],
+      "bytes": 9277,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-mark-color.svg",
+      "file_name": "ahangban-mark-color.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        120,
+        120
+      ],
+      "bytes": 586,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-mark-mono.png",
+      "file_name": "ahangban-mark-mono.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        600,
+        600
+      ],
+      "bytes": 9095,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-mark-mono.svg",
+      "file_name": "ahangban-mark-mono.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        120,
+        120
+      ],
+      "bytes": 598,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-mark.svg",
+      "file_name": "ahangban-mark.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        120,
+        120
+      ],
+      "bytes": 599,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/ahangban-wordmark-custom-color.png",
+      "file_name": "ahangban-wordmark-custom-color.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        900,
+        397
+      ],
+      "bytes": 17395,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "900:397"
+    },
+    {
+      "path": "assets/ahangban-wordmark-custom-color.svg",
+      "file_name": "ahangban-wordmark-custom-color.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        340,
+        150
+      ],
+      "bytes": 4026,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "34:15"
+    },
+    {
+      "path": "assets/ahangban-wordmark-custom-mono.png",
+      "file_name": "ahangban-wordmark-custom-mono.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        900,
+        397
+      ],
+      "bytes": 17395,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "900:397"
+    },
+    {
+      "path": "assets/ahangban-wordmark-custom-mono.svg",
+      "file_name": "ahangban-wordmark-custom-mono.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        340,
+        150
+      ],
+      "bytes": 4026,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "34:15"
+    },
+    {
+      "path": "assets/ahangban-wordmark-custom-reverse.png",
+      "file_name": "ahangban-wordmark-custom-reverse.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        900,
+        397
+      ],
+      "bytes": 15665,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "900:397"
+    },
+    {
+      "path": "assets/ahangban-wordmark-custom-reverse.svg",
+      "file_name": "ahangban-wordmark-custom-reverse.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        340,
+        150
+      ],
+      "bytes": 4026,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "34:15"
+    },
+    {
+      "path": "assets/app-icon-1024.png",
+      "file_name": "app-icon-1024.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 10993,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/app-icon.svg",
+      "file_name": "app-icon.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 666,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/artist-release-template.svg",
+      "file_name": "artist-release-template.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "قالب گرافیکی قابل ویرایش؛ پیش از انتشار با محتوای مجاز تکمیل شود.",
+      "dimensions": [
+        1080,
+        1350
+      ],
+      "bytes": 3070,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "4:5"
+    },
+    {
+      "path": "assets/avatar-ink.svg",
+      "file_name": "avatar-ink.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "آواتار/تصویر پروفایل؛ فایل موجود به‌تنهایی حضور یا مالکیت حساب را ثابت نمی‌کند.",
+      "dimensions": [
+        400,
+        400
+      ],
+      "bytes": 662,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/avatar-light.svg",
+      "file_name": "avatar-light.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "آواتار/تصویر پروفایل؛ فایل موجود به‌تنهایی حضور یا مالکیت حساب را ثابت نمی‌کند.",
+      "dimensions": [
+        400,
+        400
+      ],
+      "bytes": 662,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/brand-fonts.css",
+      "file_name": "brand-fonts.css",
+      "category": "asset",
+      "format": "css",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 1949,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/brand-tokens.css",
+      "file_name": "brand-tokens.css",
+      "category": "asset",
+      "format": "css",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 2451,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/brand-tokens.json",
+      "file_name": "brand-tokens.json",
+      "category": "asset",
+      "format": "json",
+      "purpose": "توکن طراحی برای استفاده در پیاده‌سازی.",
+      "dimensions": null,
+      "bytes": 1818,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/brand-wave-pattern.svg",
+      "file_name": "brand-wave-pattern.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "الگوی تزئینی برند.",
+      "dimensions": [
+        480,
+        240
+      ],
+      "bytes": 1325,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "2:1"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "file_name": "favicon.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "لوگو، نشان یا آیکن رابط؛ نسخهٔ دقیق را از نام فایل بخوانید.",
+      "dimensions": [
+        64,
+        64
+      ],
+      "bytes": 647,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "file_name": "OFL.txt",
+      "category": "asset",
+      "format": "txt",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 4390,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "OFL-1.1 (فایل مجوز در assets/fonts/OFL.txt)",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/fonts/vazirmatn-arabic-400.woff2",
+      "file_name": "vazirmatn-arabic-400.woff2",
+      "category": "asset",
+      "format": "woff2",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 21088,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "OFL-1.1 (فایل مجوز در assets/fonts/OFL.txt)",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/fonts/vazirmatn-arabic-500.woff2",
+      "file_name": "vazirmatn-arabic-500.woff2",
+      "category": "asset",
+      "format": "woff2",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 21792,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "OFL-1.1 (فایل مجوز در assets/fonts/OFL.txt)",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/fonts/vazirmatn-arabic-600.woff2",
+      "file_name": "vazirmatn-arabic-600.woff2",
+      "category": "asset",
+      "format": "woff2",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 21792,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "OFL-1.1 (فایل مجوز در assets/fonts/OFL.txt)",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/fonts/vazirmatn-arabic-700.woff2",
+      "file_name": "vazirmatn-arabic-700.woff2",
+      "category": "asset",
+      "format": "woff2",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 21728,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "OFL-1.1 (فایل مجوز در assets/fonts/OFL.txt)",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/fonts/vazirmatn-arabic-800.woff2",
+      "file_name": "vazirmatn-arabic-800.woff2",
+      "category": "asset",
+      "format": "woff2",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 21816,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "OFL-1.1 (فایل مجوز در assets/fonts/OFL.txt)",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/fonts/vazirmatn-latin-400.woff2",
+      "file_name": "vazirmatn-latin-400.woff2",
+      "category": "asset",
+      "format": "woff2",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 16068,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "OFL-1.1 (فایل مجوز در assets/fonts/OFL.txt)",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/fonts/vazirmatn-latin-700.woff2",
+      "file_name": "vazirmatn-latin-700.woff2",
+      "category": "asset",
+      "format": "woff2",
+      "purpose": "فونت محلی، مجوز فونت یا بارگذار فونت/توکن.",
+      "dimensions": null,
+      "bytes": 16420,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "OFL-1.1 (فایل مجوز در assets/fonts/OFL.txt)",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": null
+    },
+    {
+      "path": "assets/instagram-avatar.png",
+      "file_name": "instagram-avatar.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "آواتار/تصویر پروفایل؛ فایل موجود به‌تنهایی حضور یا مالکیت حساب را ثابت نمی‌کند.",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "bytes": 18026,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/instagram-story-template.svg",
+      "file_name": "instagram-story-template.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "قالب گرافیکی قابل ویرایش؛ پیش از انتشار با محتوای مجاز تکمیل شود.",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "bytes": 3142,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "9:16"
+    },
+    {
+      "path": "assets/playlist-cover-template.svg",
+      "file_name": "playlist-cover-template.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "قالب گرافیکی قابل ویرایش؛ پیش از انتشار با محتوای مجاز تکمیل شود.",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 2169,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/podcast-cover-template.svg",
+      "file_name": "podcast-cover-template.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "قالب گرافیکی قابل ویرایش؛ پیش از انتشار با محتوای مجاز تکمیل شود.",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 2286,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/social-post-template.svg",
+      "file_name": "social-post-template.svg",
+      "category": "asset",
+      "format": "svg",
+      "purpose": "قالب گرافیکی قابل ویرایش؛ پیش از انتشار با محتوای مجاز تکمیل شود.",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "bytes": 2623,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "assets/telegram-avatar.png",
+      "file_name": "telegram-avatar.png",
+      "category": "asset",
+      "format": "png",
+      "purpose": "آواتار/تصویر پروفایل؛ فایل موجود به‌تنهایی حضور یا مالکیت حساب را ثابت نمی‌کند.",
+      "dimensions": [
+        512,
+        512
+      ],
+      "bytes": 7117,
+      "approval_status": "WORKING_DRAFT",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "1:1"
+    },
+    {
+      "path": "concepts/01-rhythm.svg",
+      "file_name": "01-rhythm.svg",
+      "category": "concept",
+      "format": "svg",
+      "purpose": "کانسپت بصری اکتشافی؛ نسخهٔ نهایی یا تأییدشده نیست.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 1683,
+      "approval_status": "EXPLORATORY",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "8:5"
+    },
+    {
+      "path": "concepts/02-archive.svg",
+      "file_name": "02-archive.svg",
+      "category": "concept",
+      "format": "svg",
+      "purpose": "کانسپت بصری اکتشافی؛ نسخهٔ نهایی یا تأییدشده نیست.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 1406,
+      "approval_status": "EXPLORATORY",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "8:5"
+    },
+    {
+      "path": "concepts/03-signal.svg",
+      "file_name": "03-signal.svg",
+      "category": "concept",
+      "format": "svg",
+      "purpose": "کانسپت بصری اکتشافی؛ نسخهٔ نهایی یا تأییدشده نیست.",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "bytes": 1372,
+      "approval_status": "EXPLORATORY",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "8:5"
+    },
+    {
+      "path": "mood/flatlay.jpg",
+      "file_name": "flatlay.jpg",
+      "category": "reference",
+      "format": "jpg",
+      "purpose": "تصویر مرجع moodboard؛ دارایی انتشار یا تصویر دارای مجوز تلقی نشود.",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "bytes": 121319,
+      "approval_status": "REFERENCE_ONLY",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "43:24"
+    },
+    {
+      "path": "mood/hero.jpg",
+      "file_name": "hero.jpg",
+      "category": "reference",
+      "format": "jpg",
+      "purpose": "تصویر مرجع moodboard؛ دارایی انتشار یا تصویر دارای مجوز تلقی نشود.",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "bytes": 114894,
+      "approval_status": "REFERENCE_ONLY",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "43:24"
+    },
+    {
+      "path": "mood/listening-room.jpg",
+      "file_name": "listening-room.jpg",
+      "category": "reference",
+      "format": "jpg",
+      "purpose": "تصویر مرجع moodboard؛ دارایی انتشار یا تصویر دارای مجوز تلقی نشود.",
+      "dimensions": [
+        1376,
+        768
+      ],
+      "bytes": 211265,
+      "approval_status": "REFERENCE_ONLY",
+      "license_status": "UNKNOWN",
+      "source": "مخزن git آهنگ‌بان؛ منشأ بیرونی/مالکیت جداگانه مستند نشده است.",
+      "last_changed_on": null,
+      "notes": "تاریخ تغییر از metadata فایل ثبت نشده؛ نسخهٔ موجود را حذف یا جایگزین نکنید.",
+      "aspect_ratio": "43:24"
+    }
+  ]
+}

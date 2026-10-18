@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "image-prompt-templates.schema.json",
+  "title": "Ahangban Image Prompt Templates",
+  "type": "object",
+  "required": ["schema_version", "source_of_truth", "brand_style", "artist_portrait", "featured_slider", "production_note"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "source_of_truth": {"type": "string"},
+    "brand_style": {"type": "string"},
+    "production_note": {"type": "string"},
+    "artist_portrait": {"$ref": "#/$defs/template"},
+    "featured_slider": {"$ref": "#/$defs/template"}
+  },
+  "$defs": {
+    "template": {
+      "type": "object",
+      "required": ["title", "dimensions", "input_requirement", "template"],
+      "properties": {
+        "title": {"type": "string"},
+        "dimensions": {"type": "string"},
+        "input_requirement": {"type": "string"},
+        "template": {"type": "string", "minLength": 100}
+      },
+      "additionalProperties": false
+    }
+  }
+}
