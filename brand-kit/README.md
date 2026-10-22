@@ -37,6 +37,7 @@ brand-kit/
 ├── social-copy-fa.md                   نمونه متن‌های شبکهٔ اجتماعی
 ├── start-localhost.bat                 اجرای محلی در ویندوز
 ├── assets/                             لوگو، آیکن، قالب و فونت
+├── tools/build-watermarks.js           سازندهٔ واترمارک کاور از لوگوی عمودی
 │   ├── ahangban-logo-*.svg/.png        لوگوهای افقی/عمودی؛ مسیرشده و آمادهٔ کاربرد
 │   ├── ahangban-wordmark-custom-*      لوگوتایپ مستقل رنگی، تک‌رنگ و معکوس
 │   ├── ahangban-mark*.svg/.png         نشان رنگی، تک‌رنگ و معکوس

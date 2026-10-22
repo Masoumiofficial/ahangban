@@ -53,6 +53,11 @@
 - `assets/ahangban-mark.svg` و `ahangban-mark-mono.svg` — نشان مشکی تک‌رنگ.
 - `assets/favicon.svg`, `app-icon.svg`, `app-icon-1024.png` — آیکن مرورگر و اپ.
 - `assets/avatar-ink.svg`, `avatar-light.svg`, `instagram-avatar.png`, `telegram-avatar.png` — آواتارها.
+- `assets/watermark-cover-dark.svg` / `watermark-cover-light.svg` — واترمارک آمادهٔ کاور ۱۰۰۰×۱۰۰۰ با تراشه و نشان؛ نسخهٔ تیره پیش‌فرض است.
+- `assets/watermark-cover-2000-*.svg` — همان واترمارک روی بوم ۲۰۰۰×۲۰۰۰.
+- `assets/watermark-mark-dark.svg` / `watermark-mark-light.svg` — نسخهٔ فشردهٔ واترمارک (فقط نشان) برای رندرهای کوچک.
+- `assets/watermark-comparison-fa.png` — برگهٔ مقایسهٔ دو نسخه روی کاور تیره، روشن و متوسط.
+- `tools/build-watermarks.js` — سازندهٔ واترمارک‌ها از لوگوی عمودی؛ هندسه و شفافیت تراشه در همین فایل است (نیازمند `sharp` در زمان ساخت).
 
 ### فونت و توکن‌ها
 

@@ -78,6 +78,13 @@ section{scroll-margin-top:100px}
 .mark-tile{width:104px;height:88px;display:grid;place-items:center;border:1px solid var(--line);border-radius:16px;background:var(--white);padding:12px}
 .mark-tile img{width:100%;height:100%;object-fit:contain}
 .mark-tile.dark{background:var(--ink);border-color:var(--ink)}
+.wm-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.wm-tile{margin:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--white)}
+.wm-canvas{position:relative;aspect-ratio:1;display:grid;place-items:center;background:#0b2b33}
+.wm-canvas.light{background:#efece4}
+.wm-canvas img{position:absolute;inset:0;width:100%;height:100%}
+.wm-tile figcaption{font-size:12px;padding:10px 12px;color:var(--muted);border-top:1px solid var(--line)}
+.wm-tile figcaption b{color:var(--ink);display:block;font-size:13px}
 .colors{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
 .swatch{border-radius:15px;overflow:hidden;border:1px solid var(--line);background:var(--white)}
 .swatch-color{height:78px;border-bottom:1px solid var(--line)}
@@ -129,7 +136,7 @@ section{scroll-margin-top:100px}
 .footer{margin:54px 0 28px;border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
 .footer b{color:var(--ink)}
 @media(max-width:960px){.navlinks{gap:12px}.navlinks a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr .72fr;gap:22px}.grid-4{grid-template-columns:repeat(2,1fr)}.templates{grid-template-columns:repeat(3,1fr)}.colors{grid-template-columns:repeat(3,1fr)}.system-preview{grid-template-columns:1fr}.preview-sidebar{border-left:0;border-bottom:1px solid rgba(255,255,255,.18);padding:0 0 16px}.menu-list{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:640px){.wrap{width:min(100% - 28px,1160px)}.nav{min-height:66px}.nav-brand{width:148px}.nav-cta{font-size:11px;padding:7px 11px}.hero{grid-template-columns:1fr;padding:28px 22px;border-radius:22px;margin-top:15px}.hero h1{font-size:48px}.hero p{font-size:15px}.hero-art{min-height:180px}.mark-frame{width:210px;border-radius:22px}.status-note{margin-bottom:40px;font-size:13px}.section{margin:42px auto}.section-head{display:block}.grid-3,.grid-4,.visual-grid,.promise{grid-template-columns:1fr}.promise{gap:18px}.audience-card{min-height:0}.colors{grid-template-columns:repeat(2,1fr)}.type-sample{align-items:start;flex-direction:column}.type-h1{font-size:34px}.system-preview{padding:15px}.menu-list{grid-template-columns:repeat(2,1fr)}.media-grid{grid-template-columns:repeat(2,1fr)}.media-card:last-child{display:none}.templates{grid-template-columns:repeat(2,1fr);gap:9px}.template-img{height:165px}.files{grid-template-columns:1fr}.footer{display:block}.footer span{display:block;margin-bottom:5px}}
+@media(max-width:640px){.wrap{width:min(100% - 28px,1160px)}.nav{min-height:66px}.nav-brand{width:148px}.nav-cta{font-size:11px;padding:7px 11px}.hero{grid-template-columns:1fr;padding:28px 22px;border-radius:22px;margin-top:15px}.hero h1{font-size:48px}.hero p{font-size:15px}.hero-art{min-height:180px}.mark-frame{width:210px;border-radius:22px}.status-note{margin-bottom:40px;font-size:13px}.section{margin:42px auto}.section-head{display:block}.grid-3,.grid-4,.visual-grid,.promise{grid-template-columns:1fr}.promise{gap:18px}.audience-card{min-height:0}.colors{grid-template-columns:repeat(2,1fr)}.type-sample{align-items:start;flex-direction:column}.type-h1{font-size:34px}.system-preview{padding:15px}.menu-list{grid-template-columns:repeat(2,1fr)}.media-grid{grid-template-columns:repeat(2,1fr)}.media-card:last-child{display:none}.templates{grid-template-columns:repeat(2,1fr);gap:9px}.wm-row{grid-template-columns:1fr}.template-img{height:165px}.files{grid-template-columns:1fr}.footer{display:block}.footer span{display:block;margin-bottom:5px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.topbar{position:static}.navlinks,.hero-actions{display:none}.hero{break-inside:avoid}.section{break-inside:avoid}.wrap{width:100%}body{background:#fff}.card,.logo-card,.template-card{box-shadow:none}}
 </style>
@@ -214,6 +221,15 @@ section{scroll-margin-top:100px}
     <article class="template-card"><div class="template-img"><img src="assets/playlist-cover-template.svg" alt="پیش‌نمایش کاور مجموعه"></div><h3>کاور مجموعه</h3><p>۱۶۰۰×۱۶۰۰</p><a href="assets/playlist-cover-template.svg">بازکردن SVG ←</a></article>
     <article class="template-card"><div class="template-img"><img src="assets/podcast-cover-template.svg" alt="پیش‌نمایش کاور پادکست"></div><h3>کاور پادکست</h3><p>۱۶۰۰×۱۶۰۰</p><a href="assets/podcast-cover-template.svg">بازکردن SVG ←</a></article>
   </div>
+  <div class="card" style="margin-top:16px">
+    <div class="section-head" style="margin-bottom:16px"><div><h3 style="margin:0">واترمارک کاور</h3></div><p class="section-lead">تراشهٔ ۲۰۰ پیکسلی روی بوم ۱۰۰۰ پیکسل، حاشیهٔ ۵۰ پیکسل از لبه و نشان ۱۴۸ پیکسل. نسخهٔ تیره پیش‌فرض است؛ نسخهٔ روشن فقط روی گوشهٔ تیره و خلوت.</p></div>
+    <div class="wm-row">
+      <figure class="wm-tile"><div class="wm-canvas"><img src="assets/watermark-cover-dark.svg" alt="واترمارک تیره برای کاور ۱۰۰۰ پیکسلی؛ تراشهٔ تیره با نشان سفید"></div><figcaption><b>پیش‌فرض · تراشهٔ تیره</b>روی کاور تیره و روشن همیشه خوانا</figcaption></figure>
+      <figure class="wm-tile"><div class="wm-canvas light"><img src="assets/watermark-cover-light.svg" alt="واترمارک روشن برای کاور ۱۰۰۰ پیکسلی؛ تراشهٔ سفید با نشان رنگی"></div><figcaption><b>جایگزین · تراشهٔ روشن</b>فقط برای گوشهٔ تیره و خلوت</figcaption></figure>
+      <figure class="wm-tile"><div class="wm-canvas"><img src="assets/watermark-mark-dark.svg" alt="واترمارک فشرده با نشان میله‌ای برای رندرهای کوچک"></div><figcaption><b>فشرده · فقط نشان</b>برای رندر زیر ۸۰۰ پیکسل و بندانگشتی</figcaption></figure>
+    </div>
+    <p style="margin:14px 0 0;font-size:13px;color:var(--muted)">برگهٔ تصمیم با هر دو نسخه روی کاور تیره، روشن و متوسط: <a href="assets/watermark-comparison-fa.png">واترمارک-مقایسه</a></p>
+  </div>
 </section>
 <section class="section" id="trust">
   <div class="section-head"><div><div class="section-no">۰۷ / اعتماد</div><h2>هر نوع استفاده، بررسی جداگانه</h2></div></div>
@@ -231,6 +247,9 @@ section{scroll-margin-top:100px}
     <div class="file"><a href="social-copy-fa.md">متن‌های شبکهٔ اجتماعی</a><small>بیو، کپشن و پیام رابط</small></div>
     <div class="file"><a href="content-rights-checklist-fa.md">چک‌لیست حقوق محتوا</a><small>مجوز جداگانه برای هر نوع استفاده</small></div>
     <div class="file"><a href="next-steps-fa.md">گام‌های بعدی</a><small>دامنه، علامت و موارد حل‌نشده</small></div>
+    <div class="file"><a href="assets/watermark-cover-dark.svg">واترمارک کاور · تیره</a><small>پیش‌فرض؛ تراشهٔ تیره با نشان سفید</small></div>
+    <div class="file"><a href="assets/watermark-cover-light.svg">واترمارک کاور · روشن</a><small>فقط برای گوشهٔ تیره و خلوت</small></div>
+    <div class="file"><a href="assets/watermark-comparison-fa.png">برگهٔ تصمیم واترمارک</a><small>هر دو نسخه روی سه کاور + نسبت کنتراست</small></div>
     <div class="file"><a href="assets/ahangban-wordmark-custom-color.svg">لوگوتایپ اختصاصی · SVG</a><small>نسخهٔ مستقل مسیرشده برای طراح و چاپ</small></div>
     <div class="file"><a href="assets/brand-tokens.css">توکن‌های CSS</a><small>برای نمونه‌سازی رابط</small></div>
     <div class="file"><a href="assets/brand-fonts.css">فونت سازمانی</a><small>Ahangban Vazirmatn · محلی و RTL</small></div>
@@ -240,7 +259,7 @@ section{scroll-margin-top:100px}
     <div class="file"><a href="README-Windows-Localhost-fa.txt">راهنمای ویندوز</a><small>اجرای localhost</small></div>
   </div>
 </section>
-<footer class="footer"><span><b>آهنگ‌بان</b> · سیستم برند ۱٫۱ · ۷ اکتبر ۲۰۲۶</span><span>دامنه طبق اعلام مالک خریداری شده؛ علامت، محتوا و قابلیت‌ها نیازمند بررسی جداگانه‌اند.</span></footer>
+<footer class="footer"><span><b>آهنگ‌بان</b> · سیستم برند ۱٫۵ · ۲۲ اکتبر ۲۰۲۶</span><span>دامنه طبق اعلام مالک خریداری شده؛ علامت، محتوا و قابلیت‌ها نیازمند بررسی جداگانه‌اند.</span></footer>
 </main>
 </body>
 </html>
