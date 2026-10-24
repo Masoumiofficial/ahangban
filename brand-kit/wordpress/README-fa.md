@@ -17,6 +17,31 @@
 
 ---
 
+## دانلود افزونه (به‌ازای شبکه)
+
+نشانی `raw.githubusercontent.com` در بعضی شبکه‌ها (از جمله ایران) فیلتر است و خطای ۴۰۴ یا «صفحه باز نمی‌شود» می‌دهد؛ فایل سالم است و مشکل از مسیر دانلود است. هر یک از این چهار راه را امتحان کنید:
+
+| راه | نشانی |
+|---|---|
+| jsDelivr (معمولاً بدون فیلتر) | `https://cdn.jsdelivr.net/gh/Masoumiofficial/ahangban@main/brand-kit/wordpress/ahangban-banner.zip` |
+| Statically (آینهٔ دوم) | `https://cdn.statically.io/gh/Masoumiofficial/ahangban/main/brand-kit/wordpress/ahangban-banner.zip` |
+| صفحهٔ فایل در گیت‌هاب | `https://github.com/Masoumiofficial/ahangban/blob/main/brand-kit/wordpress/ahangban-banner.zip?raw=true` |
+| raw گیت‌هاب | `https://github.com/Masoumiofficial/ahangban/raw/main/brand-kit/wordpress/ahangban-banner.zip` |
+
+اگر هیچ‌کدام باز نشد، با روشن‌بودن VPN یا از «دانلود کل مخزن» استفاده کنید:
+
+```
+https://codeload.github.com/Masoumiofficial/ahangban/zip/refs/heads/main
+```
+
+سپس از پوشهٔ استخراج‌شده، `brand-kit/wordpress/ahangban-banner.zip` را بردارید.
+
+### بدون ZIP: نصب با FTP
+
+اگر هاست آپلود ZIP را می‌بندد، پوشهٔ `ahangban-banner/` را از همین مخزن در مسیر `wp-content/plugins/` بگذارید و در پیشخوان فعالش کنید. لازم نیست ZIP بسازید.
+
+---
+
 ## ۱. نصب افزونه (پیشنهادی)
 
 1. در پیشخوان: **افزونه‌ها ← افزودن ← بارگذاری افزونه** → فایل `ahangban-banner.zip` را انتخاب کنید → **نصب** → **فعال‌سازی**.
