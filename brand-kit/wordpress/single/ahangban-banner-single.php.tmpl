@@ -1,0 +1,222 @@
+<?php
+/**
+ * Plugin Name:       Ahangban Banner — «سرت بیاد» (تک‌فایل)
+ * Plugin URI:        https://github.com/Masoumiofficial/ahangban
+ * Description:       نسخهٔ تک‌فایل بنر آهنگ‌بان: CSS و تصاویر پس‌زمینه داخل همین فایل هستند. شورت‌کد <code>[ahangban_banner]</code>. فقط یک فایل برای نصب.
+ * Version:           1.1.0
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * Author:            Ahangban
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       ahangban-banner
+ *
+ * @package Ahangban_Banner_Single
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+define( 'AHANGBAN_SINGLE_VERSION', '1.1.0' );
+
+/**
+ * CSS افزونه؛ برای جلوگیری از مشکلات کوتیشن در heredoc، base64 شده است.
+ *
+ * @return string
+ */
+function ahangban_single_css() {
+	static $css = null;
+
+	if ( null === $css ) {
+		$css = base64_decode( '{{BANNER_CSS_B64}}' ); // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode -- منبع، فایل استاتیک همین مخزن است.
+	}
+
+	return $css;
+}
+
+/**
+ * تصویر ۱x به‌صورت data URI.
+ *
+ * @return string
+ */
+function ahangban_single_image_1x() {
+	return 'data:image/png;base64,{{BANNER_PNG_1X_B64}}';
+}
+
+/**
+ * تصویر ۲x به‌صورت data URI.
+ *
+ * @return string
+ */
+function ahangban_single_image_2x() {
+	return 'data:image/png;base64,{{BANNER_PNG_2X_B64}}';
+}
+
+/**
+ * چاپ استایل در head؛ فقط در صفحه‌ای که شورت‌کد دارد یا هنگام رندر آن.
+ */
+function ahangban_single_print_style() {
+	static $printed = false;
+
+	if ( $printed ) {
+		return;
+	}
+	$printed = true;
+
+	wp_register_style( 'ahangban-banner-single', false, array(), AHANGBAN_SINGLE_VERSION );
+	wp_enqueue_style( 'ahangban-banner-single' );
+	wp_add_inline_style( 'ahangban-banner-single', ahangban_single_css() );
+}
+
+/**
+ * در صفحه‌هایی که شورت‌کد در محتوا دارند، استایل از head بیاید (بدون پرش چیدمان).
+ */
+function ahangban_single_maybe_enqueue() {
+	if ( is_singular() ) {
+		$post = get_post();
+		if ( $post && has_shortcode( (string) $post->post_content, 'ahangban_banner' ) ) {
+			ahangban_single_print_style();
+		}
+	}
+}
+add_action( 'wp_enqueue_scripts', 'ahangban_single_maybe_enqueue', 20 );
+
+/**
+ * ساخت رشتهٔ اتریبیوت‌ها با اسکیپ کامل.
+ *
+ * @param array $attrs نام ⇒ مقدار.
+ * @return string
+ */
+function ahangban_single_attr_string( array $attrs ) {
+	$parts = array();
+
+	foreach ( $attrs as $name => $value ) {
+		if ( null === $value || '' === $value ) {
+			continue;
+		}
+		$parts[] = sprintf( '%s="%s"', esc_attr( $name ), esc_attr( $value ) );
+	}
+
+	return implode( ' ', $parts );
+}
+
+/**
+ * الگوی بلوک.
+ */
+function ahangban_single_register_patterns() {
+	if ( ! function_exists( 'register_block_pattern' ) ) {
+		return;
+	}
+
+	if ( function_exists( 'register_block_pattern_category' ) ) {
+		register_block_pattern_category( 'ahangban', array( 'label' => __( 'آهنگ‌بان', 'ahangban-banner' ) ) );
+	}
+
+	register_block_pattern(
+		'ahangban/banner-saret-biad-single',
+		array(
+			'title'       => __( 'بنر ویژهٔ آهنگ — «سرت بیاد»', 'ahangban-banner' ),
+			'description' => __( 'بنر ۱۶:۹ با جای کاور در یک‌سوم چپ و عنوان فارسی در دو سوم راست.', 'ahangban-banner' ),
+			'categories'  => array( 'ahangban' ),
+			'content'     => "<!-- wp:shortcode -->\n[ahangban_banner]\n<!-- /wp:shortcode -->",
+		)
+	);
+}
+add_action( 'init', 'ahangban_single_register_patterns' );
+
+/**
+ * خروجی بنر.
+ *
+ * @param array $atts ویژگی‌های شورت‌کد.
+ * @return string
+ */
+function ahangban_single_shortcode( $atts ) {
+	$atts = shortcode_atts(
+		array(
+			'title'     => __( 'سرت بیاد', 'ahangban-banner' ),
+			'artist'    => __( 'مهدی جهانی', 'ahangban-banner' ),
+			'meta'      => __( 'تک‌آهنگ', 'ahangban-banner' ),
+			'cta'       => __( 'گوش بده', 'ahangban-banner' ),
+			'href'      => '',
+			'cover'     => '',
+			'cover_alt' => __( 'کاور «سرت بیاد» از مهدی جهانی', 'ahangban-banner' ),
+			'tag'       => 'h2',
+			'class'     => '',
+		),
+		$atts,
+		'ahangban_banner'
+	);
+
+	$title = trim( wp_strip_all_tags( $atts['title'] ) );
+	if ( '' === $title ) {
+		return '';
+	}
+
+	ahangban_single_print_style();
+
+	$tag = strtolower( (string) $atts['tag'] );
+	if ( ! in_array( $tag, array( 'h1', 'h2', 'h3', 'p', 'div' ), true ) ) {
+		$tag = 'h2';
+	}
+
+	$href  = esc_url( $atts['href'] );
+	$cover = esc_url( $atts['cover'] );
+	$uid   = wp_unique_id( 'hb-banner-' );
+
+	$classes = array( 'hb-banner' );
+	foreach ( preg_split( '/\s+/', (string) $atts['class'] ) as $extra ) {
+		$extra = sanitize_html_class( $extra );
+		if ( $extra ) {
+			$classes[] = $extra;
+		}
+	}
+
+	$media_attrs = array(
+		'class'         => 'hb-banner__media',
+		'src'           => ahangban_single_image_1x(),
+		'srcset'        => ahangban_single_image_1x() . ' 1x, ' . ahangban_single_image_2x() . ' 2x',
+		'width'         => '640',
+		'height'        => '360',
+		'alt'           => '',
+		'decoding'      => 'async',
+		'fetchpriority' => 'high',
+	);
+
+	$cover_attrs = array(
+		'class'    => 'hb-banner__cover-img',
+		'src'      => $cover,
+		'width'    => '160',
+		'height'   => '160',
+		'alt'      => $atts['cover_alt'],
+		'loading'  => 'lazy',
+		'decoding' => 'async',
+	);
+
+	ob_start();
+	?>
+<div id="<?php echo esc_attr( $uid ); ?>" class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>" dir="rtl">
+	<img <?php echo ahangban_single_attr_string( $media_attrs ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- مقادیر اسکیپ شده‌اند. ?>>
+	<div class="hb-banner__cover<?php echo $cover ? '' : ' hb-banner__cover--empty'; ?>">
+		<?php if ( $cover ) : ?>
+			<img <?php echo ahangban_single_attr_string( $cover_attrs ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- مقادیر اسکیپ شده‌اند. ?>>
+		<?php endif; ?>
+	</div>
+	<div class="hb-banner__body">
+		<?php if ( '' !== trim( (string) $atts['artist'] ) ) : ?>
+			<p class="hb-banner__artist"><?php echo esc_html( $atts['artist'] ); ?></p>
+		<?php endif; ?>
+		<<?php echo $tag; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- از فهرست مجاز. ?> class="hb-banner__title"><?php echo esc_html( $title ); ?></<?php echo $tag; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- از فهرست مجاز. ?>>
+		<?php if ( '' !== trim( (string) $atts['meta'] ) ) : ?>
+			<p class="hb-banner__meta"><?php echo esc_html( $atts['meta'] ); ?></p>
+		<?php endif; ?>
+		<?php if ( $href ) : ?>
+			<a class="hb-banner__cta" href="<?php echo esc_url( $href ); ?>"><?php echo esc_html( $atts['cta'] ); ?></a>
+		<?php endif; ?>
+	</div>
+</div>
+	<?php
+	return (string) ob_get_clean();
+}
+
+if ( ! shortcode_exists( 'ahangban_banner' ) ) {
+	add_shortcode( 'ahangban_banner', 'ahangban_single_shortcode' );
+}

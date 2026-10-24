@@ -52,6 +52,7 @@ brand-kit/
 └── tools/
     ├── generate-banner-saret-biad.py      سازندهٔ بنر اسلایدر «سرت بیاد»
     ├── wordpress/ahangban-banner.zip     افزونهٔ آمادهٔ نصب در وردپرس
+    ├── wordpress/ahangban-banner-single.php  نسخهٔ تک‌فایل (CSS و تصاویر داخل فایل)
     ├── چک‌لیست-همکاری-موسیقی.html       ابزار چاپی مذاکره و اخذ اطلاعات حقوق
     └── کاتالوگ-مادر-آهنگ‌بان.xlsx       فایل عملیاتی چند شیتی
 ```

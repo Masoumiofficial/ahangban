@@ -6,11 +6,13 @@
 
 | فایل | کاربرد |
 |---|---|
-| `ahangban-banner.zip` | افزونهٔ آمادهٔ نصب؛ همین را در پیشخوان بارگذاری کنید |
+| `ahangban-banner.zip` | افزونهٔ کامل آمادهٔ نصب؛ در پیشخوان بارگذاری کنید |
+| `ahangban-banner-single.php` | نسخهٔ تک‌فایل: CSS و تصاویر داخل خودش؛ فقط آپلود در `plugins/` |
 | `ahangban-banner/` | سورس افزونه: `ahangban-banner.php`، `assets/ahangban-banner.css`، `readme.txt` |
 | `demo-fa.html` | پیش‌نمایش همان خروجی در یک صفحهٔ RTL و نمای ۳۶۰ پیکسلی |
 | `demo-cover.svg` | جای‌گیر کاور برای نمایش؛ در سایت واقعی استفاده نمی‌شود |
-| `build-plugin.py` | ساخت دوبارهٔ ZIP از سورس + تصاویر |
+| `build-plugin.py` | ساخت دوبارهٔ ZIP و نسخهٔ تک‌فایل از سورس + تصاویر |
+| `single/ahangban-banner-single.php.tmpl` | قالب تک‌فایل با جای‌نگهدار base64 |
 
 **تصاویر بنر** از `../assets/` می‌آیند (یک نسخهٔ مرجع در مخزن):
 `banner-saret-biad-640x360.png` · `banner-saret-biad-1280x720.png` · `banner-saret-biad-640x360.webp`
@@ -19,26 +21,56 @@
 
 ## دانلود افزونه (به‌ازای شبکه)
 
-نشانی `raw.githubusercontent.com` در بعضی شبکه‌ها (از جمله ایران) فیلتر است و خطای ۴۰۴ یا «صفحه باز نمی‌شود» می‌دهد؛ فایل سالم است و مشکل از مسیر دانلود است. هر یک از این چهار راه را امتحان کنید:
+نشانی `raw.githubusercontent.com` در بعضی شبکه‌ها (از جمله ایران) فیلتر است و خطای ۴۰۴ یا «صفحه باز نمی‌شود» می‌دهد؛ فایل سالم است و مشکل از مسیر دانلود است.
+
+### نسخهٔ تک‌فایل — ساده‌ترین راه
+
+`ahangban-banner-single.php` یک فایل مستقل است: CSS و هر دو تصویر پس‌زمینه (base64) داخل خودش هستند. نه پوشهٔ assets می‌خواهد، نه ZIP.
+
+1. فایل را از یکی از نشانی‌های زیر بگیرید (حجم ~۲۰KB).
+2. آن را در `wp-content/plugins/` بگذارید.
+3. پیشخوان → افزونه‌ها → **Ahangban Banner — «سرت بیاد» (تک‌فایل)** → فعال‌سازی.
 
 | راه | نشانی |
 |---|---|
-| jsDelivr (معمولاً بدون فیلتر) | `https://cdn.jsdelivr.net/gh/Masoumiofficial/ahangban@main/brand-kit/wordpress/ahangban-banner.zip` |
-| Statically (آینهٔ دوم) | `https://cdn.statically.io/gh/Masoumiofficial/ahangban/main/brand-kit/wordpress/ahangban-banner.zip` |
-| صفحهٔ فایل در گیت‌هاب | `https://github.com/Masoumiofficial/ahangban/blob/main/brand-kit/wordpress/ahangban-banner.zip?raw=true` |
+| jsDelivr | `https://cdn.jsdelivr.net/gh/Masoumiofficial/ahangban@main/brand-kit/wordpress/ahangban-banner-single.php` |
+| Statically | `https://cdn.statically.io/gh/Masoumiofficial/ahangban/main/brand-kit/wordpress/ahangban-banner-single.php` |
+| صفحهٔ گیت‌هاب (نمایش کد) | `https://github.com/Masoumiofficial/ahangban/blob/main/brand-kit/wordpress/ahangban-banner-single.php` |
+
+> اگر دانلود هم بسته بود، همان صفحهٔ گیت‌هاب کد را نشان می‌دهد: دکمهٔ **Copy raw file** (یا انتخاب همه و کپی) → در هاست فایل `ahangban-banner-single.php` بسازید و کد را Paste کنید. بدون هیچ دانلودی کار می‌کند.
+
+### نسخهٔ کامل (ZIP، با فایل‌های جدا)
+
+| راه | نشانی |
+|---|---|
+| jsDelivr | `https://cdn.jsdelivr.net/gh/Masoumiofficial/ahangban@main/brand-kit/wordpress/ahangban-banner.zip` |
+| Statically | `https://cdn.statically.io/gh/Masoumiofficial/ahangban/main/brand-kit/wordpress/ahangban-banner.zip` |
+| صفحهٔ فایل در گیت‌هاب | `https://github.com/Masoumiofficial/ahangban/blob/main/brand-kit/wordpress/ahangban-banner.zip` |
 | raw گیت‌هاب | `https://github.com/Masoumiofficial/ahangban/raw/main/brand-kit/wordpress/ahangban-banner.zip` |
 
-اگر هیچ‌کدام باز نشد، با روشن‌بودن VPN یا از «دانلود کل مخزن» استفاده کنید:
+### دانلود کل مخزن (وقتی هیچ لینک فایلی باز نمی‌شود)
 
 ```
 https://codeload.github.com/Masoumiofficial/ahangban/zip/refs/heads/main
 ```
 
-سپس از پوشهٔ استخراج‌شده، `brand-kit/wordpress/ahangban-banner.zip` را بردارید.
+بعد از استخراج، فایل‌ها در `ahangban-main/brand-kit/wordpress/` هستند:
+`ahangban-banner.zip` · `ahangban-banner-single.php` · پوشهٔ `ahangban-banner/`
 
 ### بدون ZIP: نصب با FTP
 
-اگر هاست آپلود ZIP را می‌بندد، پوشهٔ `ahangban-banner/` را از همین مخزن در مسیر `wp-content/plugins/` بگذارید و در پیشخوان فعالش کنید. لازم نیست ZIP بسازید.
+اگر هاست آپلود ZIP را می‌بندد، پوشهٔ `ahangban-banner/` را در مسیر `wp-content/plugins/` بگذارید و در پیشخوان فعالش کنید — یا فقط فایل `ahangban-banner-single.php` را آپلود کنید.
+
+### کدام را انتخاب کنم؟
+
+| | تک‌فایل | ZIP کامل |
+|---|---|---|
+| تعداد فایل | ۱ | ۵ |
+| نصب | آپلود مستقیم در `plugins/` یا بارگذاری ZIP | بارگذاری ZIP |
+| به‌روزرسانی تصاویر | داخل فایل | فایل‌های `assets/` |
+| مناسب | هاست ساده، شبکهٔ محدود، تست سریع | نگهداری بلندمدت، سفارشی‌سازی تصویر |
+
+هر دو یک شورت‌کد می‌سازند: `[ahangban_banner]`. اگر هر دو فعال باشند، فقط یکی شورت‌کد را ثبت می‌کند (تکرار خروجی نمی‌شود).
 
 ---
 
