@@ -35,18 +35,21 @@ brand-kit/
 ├── content-rights-checklist-fa.md     چک‌لیست اولیهٔ حقوق محتوا
 ├── next-steps-fa.md                    تصمیم‌ها و کارهای باز
 ├── social-copy-fa.md                   نمونه متن‌های شبکهٔ اجتماعی
+├── banner-saret-biad-fa.md             بنر اسلایدر «سرت بیاد»: منطقهٔ امن، رنگ و CSS
 ├── start-localhost.bat                 اجرای محلی در ویندوز
 ├── assets/                             لوگو، آیکن، قالب و فونت
 │   ├── ahangban-logo-*.svg/.png        لوگوهای افقی/عمودی؛ مسیرشده و آمادهٔ کاربرد
 │   ├── ahangban-wordmark-custom-*      لوگوتایپ مستقل رنگی، تک‌رنگ و معکوس
 │   ├── ahangban-mark*.svg/.png         نشان رنگی، تک‌رنگ و معکوس
 │   ├── *-template.svg                  قالب استوری، پست، اثر، مجموعه و پادکست
+│   ├── banner-saret-biad-*.png/.webp    پس‌زمینهٔ بنر ۶۴۰×۳۶۰ و نسخهٔ ۲x
 │   ├── brand-tokens.css/.json           توکن‌های قابل استفاده در محصول
 │   └── fonts/                           فونت محلی و متن OFL 1.1
 ├── concepts/                           سه مسیر بصری جایگزین برای بازبینی
 ├── mood/                               تصاویر مرجع داخلی و غیرنهایی
 ├── catalog/                             CSVهای seed و الگوهای ورود اطلاعات
 └── tools/
+    ├── generate-banner-saret-biad.py      سازندهٔ بنر اسلایدر «سرت بیاد»
     ├── چک‌لیست-همکاری-موسیقی.html       ابزار چاپی مذاکره و اخذ اطلاعات حقوق
     └── کاتالوگ-مادر-آهنگ‌بان.xlsx       فایل عملیاتی چند شیتی
 ```
