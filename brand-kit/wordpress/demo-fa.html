@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>آهنگ‌بان — پیش‌نمایش پیاده‌سازی بنر «سرت بیاد» در وردپرس</title>
+<link rel="stylesheet" href="../assets/brand-tokens.css">
+<link rel="stylesheet" href="ahangban-banner/assets/ahangban-banner.css">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#F4F4F4;color:#111111;font-family:"Ahangban Vazirmatn",Tahoma,Arial,sans-serif;line-height:1.8}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{width:min(1120px,calc(100% - 32px));margin-inline:auto}
+  .site-head{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid #E5E5E5}
+  .site-nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .site-nav img{width:164px}
+  .site-nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:13px;font-weight:700;color:#666}
+  .site-nav li:first-child{color:#111}
+  .site-nav .pill{background:#185ADB;color:#fff;padding:8px 16px;border-radius:999px;text-decoration:none;font-size:12px;font-weight:800}
+  main{padding-block:28px 56px}
+  .intro{max-width:760px;margin-block-end:22px}
+  .eyebrow{font-size:12px;font-weight:900;color:#185ADB;letter-spacing:.04em}
+  h1{font-size:clamp(26px,3.4vw,40px);line-height:1.35;margin:6px 0 10px;font-weight:900;letter-spacing:-.02em}
+  .intro p{margin:0;color:#666;font-size:15px}
+  .slider{position:relative;background:#111;border-radius:24px;padding:10px;box-shadow:0 18px 44px rgba(0,0,0,.14)}
+  .slider__stage{position:relative}
+  .slider__chrome{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 6px 2px}
+  .dots{display:flex;gap:7px;align-items:center}
+  .dots i{width:7px;height:7px;border-radius:50%;background:#555;display:block}
+  .dots i.on{width:20px;border-radius:99px;background:#185ADB}
+  .arrows{display:flex;gap:8px}
+  .arrows button{width:34px;height:34px;border-radius:50%;border:1px solid #3a3a3a;background:#1a1a1a;color:#fff;font-size:15px;line-height:1;cursor:pointer}
+  .arrows button:disabled{opacity:.4;cursor:not-allowed}
+  .caption{font-size:12px;color:#666;margin-block:10px 0}
+  .cols{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-block:34px 0;align-items:start}
+  .card{background:#fff;border:1px solid #E5E5E5;border-radius:20px;padding:22px}
+  .card h2{font-size:18px;margin:0 0 10px}
+  .card p{margin:0 0 10px;color:#555;font-size:14px}
+  .card ul{margin:0;padding-inline-start:18px;color:#555;font-size:14px}
+  .card li{margin-block-end:6px}
+  .badge{display:inline-block;background:#EAF1FF;color:#1248B2;border-radius:999px;padding:3px 10px;font-size:11px;font-weight:800;margin-block-end:10px}
+  .phone{width:360px;max-width:100%;margin-inline:auto;background:#111;border-radius:26px;padding:12px;border:1px solid #000}
+  .phone .hb-banner{border-radius:12px}
+  .phone__label{text-align:center;color:#BDBDBD;font-size:11px;margin:8px 0 0}
+  .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-block:18px 0}
+  .step{background:#fff;border:1px solid #E5E5E5;border-radius:18px;padding:20px}
+  .step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;background:#185ADB;color:#fff;font-weight:900;margin-block-end:12px}
+  .step h3{font-size:16px;margin:0 0 8px}
+  .step p{margin:0 0 10px;color:#666;font-size:13.5px}
+  .step code{display:block;direction:ltr;text-align:left;background:#111;color:#e5e5e5;border-radius:10px;padding:10px 12px;font-size:12px;overflow-x:auto;font-family:ui-monospace,Menlo,Consolas,monospace}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #E5E5E5;border-radius:16px;overflow:hidden;font-size:13.5px;margin-block-start:12px}
+  caption{text-align:start;color:#666;font-size:12.5px;padding-block:8px}
+  th,td{text-align:start;padding:10px 14px;border-bottom:1px solid #EFEFEF}
+  th{background:#F4F4F4;font-weight:800;font-size:12.5px;color:#444}
+  tr:last-child td{border-bottom:0}
+  td code{font-family:ui-monospace,Menlo,Consolas,monospace;direction:ltr;unicode-bidi:embed;font-size:12px;color:#1248B2}
+  .note{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #E5E5E5;border-inline-start:4px solid #185ADB;border-radius:14px;padding:14px 18px;margin-block:22px;color:#444;font-size:13.5px}
+  .note b{color:#111}
+  footer{border-top:1px solid #E5E5E5;padding-block:22px;color:#666;font-size:12.5px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  @media (max-width:900px){.cols,.steps{grid-template-columns:1fr}.site-nav ul{display:none}}
+  @media (max-width:640px){.slider{padding:7px;border-radius:18px}main{padding-block-start:20px}}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap site-nav">
+    <img src="../assets/ahangban-logo-horizontal-color.svg" alt="آهنگ‌بان" width="164" height="40">
+    <nav aria-label="نمونهٔ ناوبری">
+      <ul>
+        <li>خانه</li>
+        <li>تازه‌ها</li>
+        <li>هنرمندان</li>
+        <li>دربارهٔ آهنگ‌بان</li>
+        <li><a class="pill" href="#implement">راهنمای پیاده‌سازی</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <div class="eyebrow">پیش‌نمایش پیاده‌سازی وردپرس</div>
+    <h1>بنر «سرت بیاد» در قالب سایت</h1>
+    <p>این صفحه همان خروجی افزونه و CSS را نشان می‌دهد؛ عنوان، نام هنرمند و دکمه متن واقعی HTML هستند و روی تصویر ۶۴۰×۳۶۰ می‌نشینند. جای کاور با یک جای‌گیر علامت‌گذاری شده و در سایت واقعی، کاور اصلی جای آن می‌نشیند.</p>
+  </div>
+
+  <section aria-label="اسلایدر صفحهٔ اصلی">
+    <div class="slider">
+      <div class="slider__stage">
+        <div class="hb-banner" dir="rtl">
+          <img class="hb-banner__media"
+               src="../assets/banner-saret-biad-640x360.png"
+               srcset="../assets/banner-saret-biad-640x360.png 1x, ../assets/banner-saret-biad-1280x720.png 2x"
+               width="640" height="360" alt="" fetchpriority="high">
+          <div class="hb-banner__cover">
+            <img class="hb-banner__cover-img" src="demo-cover.svg" width="160" height="160" alt="جای‌گیر کاور اثر" loading="lazy">
+          </div>
+          <div class="hb-banner__body">
+            <p class="hb-banner__artist">مهدی جهانی</p>
+            <h2 class="hb-banner__title">سرت بیاد</h2>
+            <p class="hb-banner__meta">تک‌آهنگ</p>
+            <a class="hb-banner__cta" href="#implement">گوش بده</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__chrome">
+        <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+        <div class="arrows" aria-hidden="true">
+          <button type="button" disabled aria-label="اسلاید قبلی">›</button>
+          <button type="button" aria-label="اسلاید بعدی">‹</button>
+        </div>
+      </div>
+    </div>
+    <p class="caption">پهنای این نمونه ۱۱۰۰ پیکسل است؛ متن با <code>cqw</code> متناسب با پهنای بنر بزرگ می‌شود و از منطقهٔ امن بیرون نمی‌زند.</p>
+  </section>
+
+  <div class="cols">
+    <section class="card" id="implement">
+      <span class="badge">افزونهٔ آماده</span>
+      <h2>سه گام برای وردپرس</h2>
+      <ul>
+        <li>فایل <code>ahangban-banner.zip</code> را در «افزونه‌ها ← افزودن ← بارگذاری» نصب و فعال کنید.</li>
+        <li>در ویرایشگر بلوک، از دستهٔ «آهنگ‌بان» الگوی «بنر ویژهٔ آهنگ» را درج کنید یا بلوک شورت‌کد بسازید.</li>
+        <li>مقدار <code>href</code> و <code>cover</code> را با پیوند صفحهٔ اثر و کاور واقعی پر کنید.</li>
+      </ul>
+      <p style="margin-block-start:12px"><a href="README-fa.md">راهنمای کامل نصب، المنتور و اسلایدرها ←</a></p>
+    </section>
+
+    <section class="card">
+      <span class="badge">نمای موبایل</span>
+      <h2>در عرض ۳۶۰ پیکسل</h2>
+      <div class="phone">
+        <div class="hb-banner" dir="rtl">
+          <img class="hb-banner__media" src="../assets/banner-saret-biad-640x360.png"
+               width="640" height="360" alt="">
+          <div class="hb-banner__cover">
+            <img class="hb-banner__cover-img" src="demo-cover.svg" width="160" height="160" alt="جای‌گیر کاور اثر" loading="lazy">
+          </div>
+          <div class="hb-banner__body">
+            <p class="hb-banner__artist">مهدی جهانی</p>
+            <h2 class="hb-banner__title">سرت بیاد</h2>
+            <p class="hb-banner__meta">تک‌آهنگ</p>
+            <a class="hb-banner__cta" href="#implement">گوش بده</a>
+          </div>
+        </div>
+        <p class="phone__label">نسبت ۱۶:۹ حفظ می‌شود؛ بدون برش و بدون اسکرول افقی</p>
+      </div>
+    </section>
+  </div>
+
+  <h2 style="font-size:20px;margin-block:34px 6px">سه مسیر پیاده‌سازی</h2>
+  <div class="steps">
+    <article class="step">
+      <span class="n">۱</span>
+      <h3>افزونه + شورت‌کد</h3>
+      <p>ساده‌ترین راه؛ بدون دست‌زدن به کد قالب. استایل فقط در همان صفحه بارگذاری می‌شود.</p>
+      <code>[ahangban_banner href="/saret-biad" cover="/wp-content/uploads/cover.webp"]</code>
+    </article>
+    <article class="step">
+      <span class="n">۲</span>
+      <h3>بلوک HTML سفارشی / المنتور</h3>
+      <p>اگر افزونه نمی‌خواهید، همان مارک‌آپ را در بلوک HTML یا ویجت HTML المنتور بگذارید و CSS را در «CSS سفارشی» بیفزایید.</p>
+      <code>&lt;div class="hb-banner"&gt; … &lt;/div&gt;</code>
+    </article>
+    <article class="step">
+      <span class="n">۳</span>
+      <h3>اسلایدر آمادهٔ قالب</h3>
+      <p>در Smart Slider 3 یا Slider Revolution، تصویر اسلاید را همان PNG بگذارید و لایه‌های متن را با درصدهای امن بچینید.</p>
+      <code>cover: left 4.2% top 27.8% w 25% · text: right 5%</code>
+    </article>
+  </div>
+
+  <table>
+    <caption>مختصات منطقهٔ امن نسبت به کادر ۱۶:۹ — برای چیدن لایه‌ها در اسلایدرها</caption>
+    <thead>
+      <tr><th>عنصر</th><th>افقی</th><th>عمودی</th><th>اندازه</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>کاور اثر</td><td>left <code>4.22%</code></td><td>top <code>27.78%</code></td><td><code>25%</code> عرض · مربع</td></tr>
+      <tr><td>ستون متن</td><td>right <code>5%</code></td><td><code>8.33%</code> تا <code>91.67%</code></td><td><code>58.13%</code> عرض</td></tr>
+      <tr><td>عنوان</td><td>تراز راست</td><td>وسط باند</td><td><code>6.25cqw</code> ≈ ۴۰px در ۶۴۰</td></tr>
+      <tr><td>دکمه</td><td>تراز راست</td><td>پایین متن</td><td>ارتفاع لمسی <code>44px</code></td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <span aria-hidden="true" style="color:#185ADB;font-weight:900">i</span>
+    <div><b>نکتهٔ برش:</b> قاب اسلایدر باید ۱۶:۹ بماند. اگر قالب ارتفاع ثابت یا برش دیگری می‌دهد، <code>object-position: center</code> را نگه دارید و ارتفاع را روی نسبت ۱۶:۹ تنظیم کنید؛ وگرنه جای کاور و عنوان جابه‌جا می‌شود.</div>
+  </div>
+
+  <div class="note" style="border-inline-start-color:#111">
+    <span aria-hidden="true" style="font-weight:900">!</span>
+    <div>این صفحه فقط <b>نمونهٔ پیاده‌سازی</b> است. کاور واقعی، پیوند صفحهٔ اثر و وضعیت انتشار باید جداگانه و با مجوز همان اثر تأیید شوند.</div>
+  </div>
+</main>
+
+<footer class="wrap">
+  <span><b>آهنگ‌بان</b> · نمونهٔ پیاده‌سازی وردپرس · بنر ۶۴۰×۳۶۰</span>
+  <span>بدون گرادینت · پالت #111111 / #222222 / #FFFFFF / #185ADB</span>
+</footer>
+
+</body>
+</html>
